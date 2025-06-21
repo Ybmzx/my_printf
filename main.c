@@ -142,8 +142,7 @@ int printf(const char* fmt, ...) {
             i += skip_len;
         }
 
-        switch (fmt[i])
-        {
+        switch (fmt[i]) {
         case 'c':
             char c = (char)va_arg(valist, int);
             written += printf_process_char(c);
@@ -170,6 +169,7 @@ int printf(const char* fmt, ...) {
     }
     return written;
 }
+
 int main() {
     printf("int     -> %d\n",   123);
     printf("float   -> %.3f\n", 12.34f);
@@ -177,4 +177,3 @@ int main() {
     printf("char    -> %c\n",   'O');
     return 0;
 }
-
