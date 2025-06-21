@@ -173,6 +173,7 @@ int printf(const char* fmt, ...) {
 int main() {
     printf("int     -> %d\n",   123);
     printf("float   -> %.3f\n", 12.34f);
+    printf("float   -> %f\n",   12.34f);
     printf("string  -> %s\n",   "Hello world!");
     printf("char    -> %c\n",   'O');
     return 0;
