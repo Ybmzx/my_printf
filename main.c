@@ -93,7 +93,7 @@ size_t strlen(const char* str) {
 
 int printf_process_string(const char* str) {
     int len = strlen(str);
-    write(STDERR_FILENO, str, len);
+    write(STDOUT_FILENO, str, len);
     return len;
 }
 
